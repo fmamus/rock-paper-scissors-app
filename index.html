@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="imgs/rock.png" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Rock Paper Scissors Game</title>
+  </head>
+  <body>
+    <!-- MAIN SCREEN -->
+
+    <div class="container">
+      <h1>welcome to my game</h1>
+      <p>Rock Paper Scissors</p>
+      <div class="images">
+        <img
+          id="paper"
+          src="/imgs/paper.png"
+          onclick="paperClick()"
+          alt="paper"
+        />
+        <img id="rock" src="/imgs/rock.png" onclick="rockClick()" alt="rock" />
+        <img
+          id="scissors"
+          src="/imgs/scissors.png"
+          onclick="scissorsClick()"
+          alt="rock"
+        />
+      </div>
+      <!-- RESULT SCREEN -->
+
+      <div class="display" style="display: none">
+        <div class="playerDisplay">
+          <img
+            id="paperResult"
+            src="imgs/paper.png"
+            alt=""
+            style="display: none"
+          />
+          <img
+            id="rockResult"
+            src="imgs/rock.png"
+            alt=""
+            style="display: none"
+          />
+          <img
+            id="scissorsResult"
+            src="imgs/scissors.png"
+            alt=""
+            style="display: none"
+          />
+        </div>
+
+        <span class="result"></span>
+
+        <div class="comDisplay">
+          <img
+            id="paperCom"
+            src="imgs/paper.png"
+            alt=""
+            style="display: none"
+          />
+          <img id="rockCom" src="imgs/rock.png" alt="" style="display: none" />
+          <img
+            id="scissorsCom"
+            src="imgs/scissors.png"
+            alt=""
+            style="display: none"
+          />
+        </div>
+      </div>
+      <button class="button" type="button" onclick="buttonClick()">play</button>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
