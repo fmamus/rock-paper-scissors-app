@@ -92,7 +92,7 @@ const buttonClick = () => {
     scissors.style.borderBottom === "10px solid green"
   ) {
     document.querySelector("#scissorsResult").style.display = "block";
-    ocument.querySelector("#rockCom").style.display = "block";
+    document.querySelector("#rockCom").style.display = "block";
     document.querySelector(".result").innerHTML = "You Lose!";
     document.querySelector(".result").style.color = "red";
   } else if (
